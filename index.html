@@ -4,16 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="/dist/output.css" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/a076d05399.js"
-            crossorigin="anonymous"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     </head>
     <body>
         <header>
             <nav class="md:px-12 px-6">
                 <input type="checkbox" id="check">
                 <label for="check">
-                    <i class="fas fa-bars" id="btn">open</i>
-                    <i class="fas fa-times" id="cancel"> close</i>
+                    <i class="fas fa-bars" id="btn"></i>
+                    <i class="fas fa-times" id="cancel"> </i>
                 </label>
                 <a href="index.html">
                     <img
@@ -33,7 +33,7 @@
         <main>
             <!-- banner -->
             <section
-                class="bg-[#F4F8FD] md:px-12 px-6 py-10 grid grid-cols-2 w-full items-center text-gray-700 ">
+                class="bg-[#F4F8FD] md:px-12 px-6 py-10 grid md:grid-cols-2 w-full items-center text-gray-700 ">
                 <div class="banner-info">
                     <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-12">Welcome
                         to PetLoc -
@@ -49,14 +49,14 @@
                     </p>
                     <a href>
                         <button
-                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            class="bg-blue-500 mb-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                             View Our Services
                         </button>
                     </a>
                 </div>
                 <div class="w-full ">
                     <img
-                        class="w-[67%] h-[380px] rounded-md mx-auto"
+                        class="md:w-[67%] h-[380px] rounded-md mx-auto"
                         src="https://10web-site.ai/13/wp-content/uploads/sites/15/2023/11/sam-balye-fjTJ_Q0Pwkg-unsplash_Qc1I0GOv.webp"
                         alt>
                 </div>
@@ -68,7 +68,7 @@
                     <h2 class="text-3xl font-bold text-center mb-3 opacity-70">Supported
                         By</h2>
                     <div
-                        class="lg:flex grid grid-cols-3 gap-4 p-4 justify-around items-center">
+                        class="lg:flex grid md:grid-cols-3  grid-cols-2 gap-4 p-4 justify-around items-center">
                         <span>
                             <img
                                 class="w-48"
@@ -105,7 +105,7 @@
 
             <!-- conpany info -->
             <section
-                class="my-20 grid grid-cols-3 w-full justify-between text-center">
+                class="my-20 grid md:grid-cols-3 grid-cols-2 gap-6 w-full justify-between text-center">
 
                 <div>
                     <h4 class="text-lg sm:text-xl font-semibold ">Success
@@ -142,7 +142,7 @@
             <section class="bg-[#F4F8FD] md:px-12 px-6 py-20">
                 <h1 class="text-5xl font-bold mb-12">Our Services</h1>
                 <div
-                    class=" grid grid-cols-3 gap-6  justify-between ">
+                    class=" grid md:grid-cols-3 grid-cols-1 gap-6  justify-between ">
                     <div class>
                         <img
                             class="rounded-md"
@@ -188,12 +188,13 @@
             <!-- Features & Benefits section -->
             <section class="bg-[#F4F8FD] md:px-12 px-6 py-20">
                 <div class=" flex items-center">
-                    <div class="w-full h-[1px] bg-gray-300"></div>
-                    <p class="w-[46%] text-xl font-semibold text-center">
+                    <div class="w-full h-[1px] md:block hidden bg-gray-300"></div>
+                    <p
+                        class="md:w-[46%] w-[100%] text-xl font-semibold text-center">
                         Features & Benefits</p>
-                    <div class="w-full h-[1px] bg-gray-300"></div>
+                    <div class="w-full h-[1px] md:block hidden bg-gray-300"></div>
                 </div>
-                <div class="text-center w-[50%] mx-auto mt-12">
+                <div class="text-center md:w-[50%] mx-auto mt-12">
                     <h3 class="text-3xl font-bold sm:text-4xl text-gray-700">A
                         one-stop solution</h3>
                     <p class="text-lg text-gray-600">At PetLoc, we provide a
@@ -330,12 +331,13 @@
         </main>
 
         <footer class="md:px-12 px-6 ">
-            <section class="flex items-center gap-6 w-full">
-                <div class="w-[60%]">
-                    <img class=" h-96 w-[100%]" src="images/logos/2.png" alt>
+            <section class="md:flex items-center gap-6 w-full">
+                <div class="md:w-[60%] md:mb-0 mb-12">
+                    <img class=" md:h-96 h-28 w-[100%]" src="images/logos/2.png"
+                        alt>
                 </div>
                 <div
-                    class="w-[100%] grid grid-cols-3 justify-between  ">
+                    class="w-[100%] grid md:grid-cols-3 grid-cols-2 justify-between  ">
                     <div class="flex flex-col gap-4">
                         <div class>
                             <p class="text-gray-500">Call Us</p>
