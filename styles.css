@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+header nav{
+    height: 80px; 
+    background: white;
+}
+
+header nav img{
+    width: 150px;
+    position: absolute;
+    top: 17px;
+}
+
+header nav ul{
+    float: right;
+}
+
+header nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+}
+header nav ul li a{
+    position: relative;
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+
+header nav ul li a:hover{
+color: gray;
+}
+
+label #btn,
+label #cancel{
+font-size: 30px;
+float: right;
+line-height: 80px;
+margin-right: 40px;
+cursor: pointer;
+display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media  (max-width:1118px){
+    header nav img{
+        left: 8%;
+    }
+}
+
+@media  (max-width:944px){
+    header nav img{
+        left: 6%;
+        top: 20px;
+        width: 110px;
+    }
+
+        header nav ul li a {
+            font-size: 16px;  
+        }
+}
+
+
+@media  (max-width:944px){
+ label #btn{
+    display: block;
+ }
+  header nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+   top: 80px ;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+ }
+header nav ul li {
+   display: block;
+ margin: 30px 0;
+line-height: 30px;
+}
+#check:checked ~ ul {
+left: 0;
+}
+
+#check:checked ~ label #btn{
+    display: none;
+}
+#check:checked ~ label #cancel{
+    display: block;
+}
+
+}
+
